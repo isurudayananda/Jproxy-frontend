@@ -65,6 +65,7 @@ public class LogManager {
             count++;
         }
 
-        return elements[count + 1].getClassName();  // TODO Bug buffer overflow
+        // return elements[count + 1].getClassName();  // TODO Bug buffer overflow
+        return elements[count-1].getClassName();
     }
 }
