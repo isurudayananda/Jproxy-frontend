@@ -38,14 +38,9 @@ public class LogManager {
     }
 
     static String getColor(String threadName) {
-        int hash = 0;
-        try {
-            hash = (threadName.hashCode() + getClassName().hashCode() > 0) ?
+        int hash = (threadName.hashCode() + getClassName().hashCode() > 0) ?
                     (threadName.hashCode() + getClassName().hashCode()) :
                     (-1 * (threadName.hashCode() + getClassName().hashCode()));
-        } catch (Exception e) {
-            // TODO temp patch for bug mentioned in line 67
-        }
         return colors[hash % colors.length];
     }
 
