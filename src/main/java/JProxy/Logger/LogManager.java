@@ -60,6 +60,6 @@ public class LogManager {
             count++;
         }
 
-        return elements[count + 1].getClassName();
+        return elements[count + 1].getClassName();  // TODO Bug buffer overflow 
     }
 }
