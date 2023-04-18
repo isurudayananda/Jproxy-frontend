@@ -44,7 +44,7 @@ public class LogManager {
         return colors[hash % colors.length];
     }
 
-    public static String getClassName() {
+    public static String getClassName() throws ArrayIndexOutOfBoundsException {
         StackTraceElement[] elements = Thread.currentThread().getStackTrace();
         int count = 0;
         for (StackTraceElement element : elements) {
@@ -60,6 +60,6 @@ public class LogManager {
             count++;
         }
 
-        return elements[count + 1].getClassName();  // TODO Bug buffer overflow 
+        return elements[count + 1].getClassName();  // TODO Bug buffer overflow
     }
 }
