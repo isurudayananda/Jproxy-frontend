@@ -1,6 +1,6 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
-import tech.altier.Thread.ThreadColor;
+import JProxy.Thread.ThreadColor;
 
 class ConsoleLogger implements Logger {
     @Override

@@ -1,6 +1,6 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
-import tech.altier.Thread.ThreadColor;
+import JProxy.Thread.ThreadColor;
 
 public class LogManager {
     private static Logger logger = null;
@@ -49,7 +49,7 @@ public class LogManager {
         int count = 0;
         for (StackTraceElement element : elements) {
             if (
-                    element.getClassName().equalsIgnoreCase("tech.altier.Logger.LogManager")
+                    element.getClassName().equalsIgnoreCase("Logger.JProxy.LogManager")
                     && (
                             element.getMethodName().equalsIgnoreCase("log")
                             || element.getMethodName().equalsIgnoreCase("logln")

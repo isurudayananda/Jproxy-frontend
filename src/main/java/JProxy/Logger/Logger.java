@@ -1,4 +1,4 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
 interface Logger {
     void log(String message);

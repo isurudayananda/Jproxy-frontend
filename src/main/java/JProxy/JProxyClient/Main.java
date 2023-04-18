@@ -1,13 +1,12 @@
-package tech.altier.JProxyClient;
+package JProxy.JProxyClient;
 
+import JProxy.Logger.LogManager;
+import JProxy.Logger.LoggerType;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
-import tech.altier.Logger.LogManager;
-import tech.altier.Logger.LoggerType;
 
 import java.io.IOException;
 

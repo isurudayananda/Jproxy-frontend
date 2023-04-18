@@ -1,7 +1,7 @@
-package tech.altier.JProxyClient.models;
+package JProxy.JProxyClient.models;
 
-import tech.altier.JProxyClient.Main;
-import tech.altier.JSONParse.JacksonOM;
+import JProxy.JProxyClient.Main;
+import JProxy.JSONParse.JacksonOM;
 
 import java.io.BufferedReader;
 import java.io.IOException;
