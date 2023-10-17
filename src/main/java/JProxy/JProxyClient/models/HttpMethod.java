@@ -1,4 +1,4 @@
-package tech.altier.JProxyClient.models;
+package JProxy.JProxyClient.models;
 
 public enum HttpMethod {
     GET,

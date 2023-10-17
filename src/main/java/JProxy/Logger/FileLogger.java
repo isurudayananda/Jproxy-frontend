@@ -1,4 +1,4 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
 import java.io.IOException;
 import java.nio.file.Files;

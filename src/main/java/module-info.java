@@ -1,4 +1,4 @@
-module tech.altier.JProxyClient {
+module JProxy.JProxyClient {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -10,6 +10,6 @@ module tech.altier.JProxyClient {
 //    requires javafx.media;
 //    requires javafx.web;
 
-    opens tech.altier.JProxyClient to javafx.fxml;
-    exports tech.altier.JProxyClient;
+    opens JProxy.JProxyClient to javafx.fxml;
+    exports JProxy.JProxyClient;
 }

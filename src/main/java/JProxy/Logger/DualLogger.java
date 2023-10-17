@@ -1,4 +1,4 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
 class DualLogger implements Logger {
     private final Logger consoleLogger;

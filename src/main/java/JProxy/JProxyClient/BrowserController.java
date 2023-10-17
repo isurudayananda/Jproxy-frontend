@@ -1,4 +1,4 @@
-package tech.altier.JProxyClient;
+package JProxy.JProxyClient;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

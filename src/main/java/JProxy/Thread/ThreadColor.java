@@ -1,4 +1,4 @@
-package tech.altier.Thread;
+package JProxy.Thread;
 
 /**
  * This class is used to set the color of the console output.

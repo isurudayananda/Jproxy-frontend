@@ -1,6 +1,6 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
-import tech.altier.Thread.ThreadColor;
+import JProxy.Thread.ThreadColor;
 
 public class LogManager {
     private static Logger logger = null;
@@ -39,17 +39,17 @@ public class LogManager {
 
     static String getColor(String threadName) {
         int hash = (threadName.hashCode() + getClassName().hashCode() > 0) ?
-                (threadName.hashCode() + getClassName().hashCode()) :
-                (-1*(threadName.hashCode() + getClassName().hashCode()));
+                    (threadName.hashCode() + getClassName().hashCode()) :
+                    (-1 * (threadName.hashCode() + getClassName().hashCode()));
         return colors[hash % colors.length];
     }
 
-    public static String getClassName() {
+    public static String getClassName() throws ArrayIndexOutOfBoundsException {
         StackTraceElement[] elements = Thread.currentThread().getStackTrace();
         int count = 0;
         for (StackTraceElement element : elements) {
             if (
-                    element.getClassName().equalsIgnoreCase("tech.altier.Logger.LogManager")
+                    element.getClassName().equalsIgnoreCase("Logger.JProxy.LogManager")
                     && (
                             element.getMethodName().equalsIgnoreCase("log")
                             || element.getMethodName().equalsIgnoreCase("logln")
@@ -60,6 +60,7 @@ public class LogManager {
             count++;
         }
 
-        return elements[count + 1].getClassName();
+        // return elements[count + 1].getClassName();  // TODO Bug buffer overflow
+        return elements[count-1].getClassName();
     }
 }

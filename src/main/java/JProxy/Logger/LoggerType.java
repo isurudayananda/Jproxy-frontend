@@ -1,4 +1,4 @@
-package tech.altier.Logger;
+package JProxy.Logger;
 
 public enum LoggerType {
     FILE, CONSOLE, BOTH
